@@ -2,4 +2,12 @@
 
 body {
   background-color: rgb(119, 119, 119);
+  /* background-image: url("https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fassets-global.website-files.com%2F5f040f2a21e82365b1bf2224%2F5f3c054ecb53cbf99aa7512b_badmap.png&sp=1774560809T49ba61e8b5cf779f9c98fd3edab6627e28ad3104c8907db3102f79e581d81d01");
+  background-repeat: no-repeat;
+  background-size: inherit} */
+}
+
+@font-face {
+  font-family: superBold;
+  src: url("/GrislyBeastRegular-0W9rG.ttf");
 }
