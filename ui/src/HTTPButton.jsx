@@ -22,6 +22,63 @@ export default function HTTPButton({ method }) {
       break;
   }
 
+  const requestSender = () => {
+    let bodyElem = document.querySelector("#reqBody");
+    let tableElem = document.querySelector("#tableQuery");
+    let display = document.querySelector("#fetchAwait");
+    let table = tableElem.value;
+    let reqBody = bodyElem.value;
+    let url = table
+      ? `http://localhost:8080/${table}`
+      : "http://localhost:8080/";
+
+    if (method == "GET") {
+      fetch(url)
+        .then((data) => data.json())
+        .then((data) => {
+          console.log(data.message);
+          display.innerHTML = JSON.stringify(data.message);
+          console.log(display.innerHTML);
+        });
+    } else if (method == "POST") {
+      fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: reqBody,
+      })
+        .then((data) => data.json())
+        .then((data) => (display.innerHTML = JSON.stringify(data.message)));
+    } else if (method == "PATCH") {
+      fetch(url, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: reqBody,
+      })
+        .then((data) => data.json())
+        .then((data) => {
+          console.log(data);
+          display.innerHTML = JSON.stringify(data.message);
+        });
+    } else if (method == "DELETE") {
+      fetch(url, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: reqBody,
+      })
+        .then((data) => data.json())
+        .then((data) => {
+          console.log(data);
+          display.innerHTML = JSON.stringify(data.message);
+        });
+    }
+  };
+
   return (
     <div
       className={`
@@ -47,6 +104,7 @@ export default function HTTPButton({ method }) {
         justify-center
         font-
         `}
+      onClick={requestSender}
     >
       <h1> {method || "Null"} </h1>
     </div>

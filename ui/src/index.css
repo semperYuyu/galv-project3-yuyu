@@ -7,6 +7,51 @@ body {
   background-size: inherit} */
 }
 
+#Home {
+  background-image: url("/houseInterior.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#Office {
+  background-image: url("/officeBuilding.gif");
+  background-size: auto;
+}
+
+#HomeAPI {
+  background-image: url("/HomeAPI.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#OfficeAPI {
+  background-image: url("/OfficeAPI.jpeg");
+  background-size: 1600px 835px;
+  background-repeat: no-repeat;
+}
+
+#HomeRegister {
+  background-image: url("/HomeRegister.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+}
+
+#HomeLogin {
+  background-image: url("/HomeLogin.jpg");
+  background-size: 500px;
+  background-repeat: no-repeat;
+}
+#OfficeRegister {
+  background-image: url("/OfficeRegister.png");
+  background-size: 800px;
+  background-repeat: no-repeat;
+}
+
+#OfficeLogin {
+  background-image: url("/OfficeLogin.png");
+  background-size: 750px;
+  background-repeat: no-repeat;
+}
 @font-face {
   font-family: superBold;
   src: url("/GrislyBeastRegular-0W9rG.ttf");
