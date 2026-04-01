@@ -32,6 +32,12 @@
 
 ###### Light/Dark Mode
 
+### Main Feature
+
+###### API Page - Can send HTTP requests to backend and view response data within page
+
+###### Took me a much longer time than I'd like to admit :D
+
 ### CMDs
 
 ###### Frontend - npm run dev
