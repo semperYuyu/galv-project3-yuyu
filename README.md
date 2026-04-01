@@ -2,17 +2,15 @@
 
 ### Frontend
 
-#### Vite
+###### Vite
 
-#### React
+###### React
 
 ### Backend
 
-#### PostgreSQL
+###### PostgreSQL
 
-#### Express
-
-#### Bcrypt
+###### Express
 
 ### Database
 
@@ -24,21 +22,21 @@
 
 #### Type
 
-##### Future implementations include the usage of more than just the first two tables
+###### Future implementations include the usage of more than just the first two tables
 
 ### Features
 
-##### GUI Application to send API calls
+###### GUI Application to send API calls
 
-##### A Pokemon :D
+###### A Pokemon :D
 
-##### Light/Dark Mode
+###### Light/Dark Mode
 
 ### CMDs
 
-##### Frontend - npm run dev
+###### Frontend - npm run dev
 
-##### Backend
+###### Backend
 
 ###### database: docker run --rm --name pg-docker \ -e POSTGRES_PASSWORD=docker \ -d \ -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib postgresql \ postgres ; docker exec -it pg-docker bash ; psql -U postgres ; CREATE DATABASE yuyu_db ;
 
